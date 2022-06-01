@@ -51,8 +51,8 @@ public static void mostrarMenu(){
         System.out.println("#1 para consultar por el año (2004).");
         System.out.println("#2 para consultar las por la palabra (chiguiro) .");
         System.out.println("#3 para consultar por el texto (Grand Theft Auto).");
-        Scanner sc = new Scanner(System.in);
-        int opcion =sc.nextInt();
+        Scanner sca = new Scanner(System.in);
+        int opcion =sca.nextInt();
         switch(opcion){
             case 0 :
                 loop=0;
@@ -63,9 +63,10 @@ public static void mostrarMenu(){
                 nombre="2004.txt";
                 boolean ver=true;
                 getMetadata();
+                Contadorcito();
                 while(ver==true){
                     System.out.println("Escriba 0 para volver al menú");
-                    int regresar=sc.nextInt();
+                    int regresar=sca.nextInt();
                     if(regresar==0){
                         System.out.println("Ha regresado al menu");
                         ver=false;
@@ -81,10 +82,11 @@ public static void mostrarMenu(){
             link="https://www.bing.com/search?q=chiguiro&form=QBLH&sp=-1&pq=chigui&sc=6-6&qs=n&sk=&cvid=D189E7CC8FA74660BEAB2A5A81CE7BF4";
             nombre="Chiguiro.txt";
                 getMetadata();
+                Contadorcito();
                 boolean ve=true;
                 while(ve==true){
                     System.out.println("Escriba 0 para volver al menú");
-                    int regresar=sc.nextInt();
+                    int regresar=sca.nextInt();
                     if(regresar==0){
                         System.out.println("Ha regresado al menu");
                         ver=false;
@@ -100,10 +102,11 @@ public static void mostrarMenu(){
             link="https://www.bing.com/search?q=Grand+Theft+Auto&qs=n&form=QBRE&sp=-1&pq=grand+theft+auto&sc=6-16&sk=&cvid=A82F77F7F7DC467D8E14A79431FBFF67";
             nombre="GTA.txt";
             getMetadata();
+            Contadorcito();
                 boolean vr=true;
                 while(vr==true){
                     System.out.println("Escriba 0 para volver al menú");
-                    int regresar=sc.nextInt();
+                    int regresar=sca.nextInt();
                     if(regresar==0){
                         System.out.println("Ha regresado al menu");
                         ver=false;
