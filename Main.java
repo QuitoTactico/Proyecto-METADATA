@@ -1,4 +1,5 @@
 //are we supossed to sleep when we have to do stuff like this? welp :,D
+//No, that's the programmer way c:
 import java.io.*;
 import java.net.*;
 import java.util.Scanner;
@@ -123,3 +124,13 @@ public static void mostrarMenu(){
         }
     }
 }
+
+/*
+      _                ___       _.--.
+      \`.|\..----...-'`   `-._.-'_.-'`  
+      /  ' `         ,       _.-'              
+      )/' _/     \   `-_,   /                
+      `-'" `"\_  ,_.-;_.-\_ ',          Literally the best cat ever.
+          _.-'_./   {_.'   ; /            
+         {_.-``-'         {_/         
+*/
