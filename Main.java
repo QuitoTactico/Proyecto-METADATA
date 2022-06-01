@@ -14,14 +14,13 @@ public class Main
         while(repeat==0){
             mostrarMenu();
             repeat=1;
-        }
-    
+        }   
 }
 public static void Contadorcito(){
-    String ficheritos = nombre;
-    try (Stream<String> stream = Files.lines(Paths.get(ficheritos))){
+    Path ficheritos = Paths.get("Ficherito.txt");
+    Stream<String> stream = Files.lines(Paths.get(ficheritos));
+    stream.forEach(System.out::println);
 
-    }
     
 }
 public static void getMetadata(){
@@ -44,7 +43,6 @@ public static void getMetadata(){
 public static void mostrarMenu(){
     int loop=1;
     while(loop==1){
-        
         System.out.println("Hola ingrese un numero para acceder a alguna de las opciones.(Por favor escriba numeros nunca letras por que o sino yaper)");
         System.out.println("#0 para finalizar.");
         System.out.println("#1 para consultar por el año (2004).");
@@ -56,7 +54,6 @@ public static void mostrarMenu(){
             case 0 :
                 loop=0;
                 break;                   
-                
             case 1:
                 System.out.println("Ha escogido la opcion año 2004");
                 link="https://www.bing.com/search?q=2004&qs=n&form=QBRE&sp=-1&pq=2&sc=6-1&sk=&cvid=39D8A7894BA74E8792F967B21D9038D0";
@@ -114,8 +111,8 @@ public static void mostrarMenu(){
                         mostrarMenu();
                     }
                 }
+            }
+            break;
         }
-        break;
     }
-}
 }
