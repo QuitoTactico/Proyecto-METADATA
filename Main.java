@@ -2,6 +2,9 @@
 import java.io.*;
 import java.net.*;
 import java.util.Scanner;
+import java.util.stream.Stream;
+import java.nio.file.Files;
+import java.nio.file.Paths;
 public class Main
 {
     static String link;
@@ -12,6 +15,13 @@ public class Main
             mostrarMenu();
             repeat=1;
         }
+    
+}
+public static void Contadorcito(){
+    String ficheritos = nombre;
+    try (Stream<String> stream = Files.lines(Paths.get(ficheritos))){
+
+    }
     
 }
 public static void getMetadata(){
