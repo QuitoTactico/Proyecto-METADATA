@@ -1,4 +1,4 @@
-//are we supossed to sleep when we have stuff like this? welp :,D
+//are we supossed to sleep when we have to do stuff like this? welp :,D
 import java.io.*;
 import java.net.*;
 import java.util.Scanner;
