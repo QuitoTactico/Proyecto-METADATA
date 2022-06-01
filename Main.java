@@ -20,7 +20,7 @@ public static void Contadorcito(){
     String ficheritos = "Ficherito.txt";
     try (Stream<String> stream = Files.lines(Paths.get(ficheritos))) {
         Stream.of(nombre)
-            .dropWhile(element -> element.equals("Buscar"))
+            .filter(element -> element.equals("Buscar"))
             .forEach(System.out::println);
     } catch (IOException e) {
         e.printStackTrace();
