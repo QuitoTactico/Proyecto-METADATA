@@ -17,11 +17,12 @@ public class Main
         }   
 }
 public static void Contadorcito(){
-    Path ficheritos = Paths.get("Ficherito.txt");
-    Stream<String> stream = Files.lines(Paths.get(ficheritos));
-    stream.forEach(System.out::println);
-
-    
+    String ficheritos = "Ficherito.txt";
+    try (Stream<String> stream = Files.lines(Paths.get(ficheritos))) {
+        
+    } catch (IOException e) {
+        e.printStackTrace();
+    }   
 }
 public static void getMetadata(){
     try{
